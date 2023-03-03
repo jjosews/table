@@ -1,0 +1,105 @@
+@media screen and (max-width: 1800px){
+  .breadcrumbs{
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .exchange{
+    padding-right: 40px;
+    padding-left: 40px;
+    &__skin-items{
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 12px;
+    }
+    &__stuff-give,
+    &__stuff-take{
+      max-width: 460px;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px){
+  .breadcrumbs{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .exchange{
+    padding-right: 10px;
+    padding-left: 10px;
+    &__sidebar{
+      width: 29.768%;
+      min-width: 420px;
+      .exchange__skin-img{
+        padding: 4px;
+        img{
+          height: 64px;
+        }
+      }
+      .exchange__skin-quality{
+        padding: 6px 4px 4px 8px;
+      }
+      .exchange__skin-price{
+        padding: 0 8px 8px 8px;
+      }
+    }
+    &__stuff-give,
+    &__stuff-take{
+      max-width: 430px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px){
+  .exchange{
+    &__stuff{
+      flex-direction: column;
+    }
+    &__stuff-give,
+    &__stuff-take{
+      max-width: 100%;
+    }
+    &__stuff-give{
+      margin-bottom: 32px;
+    }
+    &__stuff-transfer{
+      display: none;
+    }
+    &__skin-items{
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 12px;
+    }
+    &__search-btn{
+      display: block;
+    }
+    &__sidebar{
+      min-width: 320px;
+      width: 24.654%;
+      padding: 16px;
+    }
+    &__sidebar-tradelink{
+      padding: 6px;
+    }
+    &__sidebar-list{
+      grid-template-columns: repeat(2, 1fr);
+      .exchange__skin-img{
+        height: auto;
+      }
+    }
+  }
+  .select-modal{
+    &__window{
+      max-width: 1160px;
+    }
+    &__items{
+      grid-template-columns: repeat(7, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 1280px){
+  .exchange{
+    &__take-close,
+    &__give-close{
+      display: block;
+    }
+  }
+}
